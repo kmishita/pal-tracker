@@ -1,0 +1,31 @@
+6.44.1+c3b20bfbe.2019-05-08
+
+
+http://pal-tracker-boisterous-hippopotamus.cfapps.io/
+
+
+./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-kind-lion.cfapps.io/env
+
+pal-tracker-sd-mk-review.cfapps.io
+pal-tracker-sd-mk-prd.cfapps.io
+
+./gradlew cloudNativeDeveloperRest -PserverUrl=https://pal-tracker-sd-mk-prd.cfapps.io
+
+./gradlew cloudNativeDeveloperRest -PserverUrl=https://pal-tracker-sd-mk-review.cfapps.io
+
+
+./gradlew cloudNativeDeveloperSimpleApp -PreviewUrl=https://pal-tracker-sd-mk-review.cfapps.io -PproductionUrl=https://pal-tracker-sd-mk-prd.cfapps.io
+
+
+{
+    "Id": "123",
+    "ProjectId": "ABC",
+    "UserId": "4566",
+    "Date": "27-08-2019",
+    "Hours": "8"
+}
+
+dotnet run --project src/PalTracker
+
+
+ cf create-service cleardb spark tracker-database 
