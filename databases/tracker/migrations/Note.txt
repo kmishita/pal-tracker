@@ -14,6 +14,9 @@ pal-tracker-sd-mk-prd.cfapps.io
 ./gradlew cloudNativeDeveloperRest -PserverUrl=https://pal-tracker-sd-mk-review.cfapps.io
 
 
+./gradlew cloudNativeDeveloperDatabaseMigrations -PserverUrl=https://pal-tracker-sd-mk-review.cfapps.io
+
+
 ./gradlew cloudNativeDeveloperSimpleApp -PreviewUrl=https://pal-tracker-sd-mk-review.cfapps.io -PproductionUrl=https://pal-tracker-sd-mk-prd.cfapps.io
 
 
